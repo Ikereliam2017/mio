@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>👟CALZADOS BURCHE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HERO -->
+ <section id="inicio" class="hero">
+<h1>👟CALZADOS BURCHE</h1>
+<h1>Los mejores zapatos deportivos</h1>
+<p>Explora nuestros 279 modelos</p>
+
+</section>
+
+<!-- NOSOTROS -->
+
+<section id="nosotros" class="container mt-5">
+
+<h2 class="text-center">Quiénes Somos</h2>
+
+<p class="text-center">
+
+Calzados Burche es una empresa dedicada a ofrecer
+calzado deportivo y casual de alta calidad para
+nuestros clientes. Nuestro objetivo es brindar
+comodidad, estilo y durabilidad.
+
+</p>
+
+</section>
+
+<!-- PRODUCTOS -->
+
+<section id="productos" class="container mt-5">
+
+<h2 class="text-center mb-5">Nuestros Productos</h2>
+
+<div class="row" id="contenedorProductos"></div>
+
+</section>
+
+<section class="productos" id="listaProductos"></section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">✖</span>
+
+    <img id="modalImg">
+    <h2 id="modalTitulo"></h2>
+    <p id="modalPrecio"></p>
+    <p id="modalDescripcion"></p>
+
+    <div class="whatsapp-opciones">
+  <a id="btnWhatsapp1" class="btn-whatsapp" target="_blank">
+    🟢 WhatsApp 0968806312
+  </a>
+
+  <a id="btnWhatsapp2" class="btn-whatsapp secundario" target="_blank">
+    🟢 WhatsApp 0991216329
+  </a>
+</div>
+
+  </div>
+</div>
+
+<!-- ===============================
+     🟢 WHATSAPP FLOTANTE DOBLE
+================================ -->
+<div class="whatsapp-container">
+
+  <div class="whatsapp-menu" id="whatsappMenu">
+    <a
+      href="https://wa.me/593968806312?text=Hola%20👋%20Estoy%20interesado%20en%20sus%20zapatillas"
+      target="_blank"
+    >
+      📱 0968806312
+    </a>
+
+    <a
+      href="https://wa.me/593991216329?text=Hola%20👋%20Estoy%20interesado%20en%20sus%20zapatillas"
+      target="_blank"
+    >
+      📱  0991216329
+    </a>
+  </div>
+
+  <div class="whatsapp-float" onclick="toggleWhatsapp()">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+    >
+  </div>
+
+</div>
+
+
+<script src="usuario.js"></script>
+</body>
+</html>

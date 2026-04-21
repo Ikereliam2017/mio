@@ -1,0 +1,930 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #501a0d;
+  color: #fff;
+  margin: 0;
+}
+
+/* ===============================
+   🎨 ESTILOS GENERALES
+================================ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #ffffff;
+  margin: 0;
+}
+
+.hero{
+
+background:url('https://images.unsplash.com/photo-1542291026-7eec264c27ff');
+background-size:cover;
+background-position:center;
+
+height:60vh;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+}
+
+.hero h1{
+font-size:3rem;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(90deg,#0ea5e9,#2563eb);
+}
+
+.card{
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ============================= */
+/* ESTILO GENERAL */
+/* ============================= */
+
+body{
+font-family:'Poppins',sans-serif;
+background:#f4f6f9;
+margin:0;
+padding:0;
+}
+
+
+/* ============================= */
+/* SECCIÓN NOSOTROS */
+/* ============================= */
+
+#nosotros{
+
+background:white;
+padding:70px 30px;
+margin-top:60px;
+
+border-radius:15px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+text-align:center;
+
+}
+
+#nosotros h2{
+
+font-size:2.7rem;
+font-weight:700;
+
+margin-bottom:25px;
+
+color:#222;
+
+position:relative;
+
+}
+
+/* Línea decorativa debajo del título */
+
+#nosotros h2::after{
+
+content:"";
+
+width:80px;
+height:4px;
+
+background:#ff9800;
+
+display:block;
+
+margin:10px auto;
+
+border-radius:10px;
+
+}
+
+#nosotros p{
+
+max-width:850px;
+
+margin:auto;
+
+font-size:1.2rem;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+
+/* ============================= */
+/* SECCIÓN PRODUCTOS */
+/* ============================= */
+
+#productos{
+
+padding:70px 20px;
+
+}
+
+#productos h2{
+
+text-align:center;
+
+font-size:2.7rem;
+
+font-weight:700;
+
+margin-bottom:40px;
+
+color:#222;
+
+position:relative;
+
+}
+
+#productos h2::after{
+
+content:"";
+
+width:80px;
+height:4px;
+
+background:#ff9800;
+
+display:block;
+
+margin:10px auto;
+
+border-radius:10px;
+
+}
+
+
+/* ============================= */
+/* TARJETAS DE ZAPATOS */
+/* ============================= */
+
+.card{
+
+border:none;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:0.4s;
+
+background:white;
+
+}
+
+.card img{
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+.card-body{
+
+padding:20px;
+
+text-align:center;
+
+}
+
+.card-body h5{
+
+font-size:1.3rem;
+
+font-weight:600;
+
+margin-bottom:10px;
+
+color:#222;
+
+}
+
+.card-body p{
+
+font-size:1.2rem;
+
+color:#28a745;
+
+font-weight:bold;
+
+}
+
+
+/* BOTÓN */
+
+.card button{
+
+border-radius:25px;
+
+padding:8px 18px;
+
+font-size:14px;
+
+transition:0.3s;
+
+}
+
+.card button:hover{
+
+background:#ff9800;
+
+border:none;
+
+}
+
+
+/* EFECTO HOVER */
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+
+}
+
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media(max-width:768px){
+
+#nosotros h2,
+#productos h2{
+
+font-size:2rem;
+
+}
+
+.card img{
+
+height:200px;
+
+}
+
+#nosotros{
+
+padding:50px 20px;
+
+}
+
+}
+
+/* ===============================
+   🧢 HEADER
+================================ */
+header {
+  padding: 25px;
+  text-align: center;
+  background: linear-gradient(90deg, #0ea5e9, #2563eb);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+header p {
+  margin-top: 8px;
+  opacity: 0.9;
+}
+
+/* ===============================
+   🛍️ PRODUCTOS GRID
+================================ */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+/* ===============================
+   👟 TARJETA PRODUCTO
+================================ */
+.producto {
+  background: #111827;
+  padding: 20px;
+  border-radius: 18px;
+  text-align: center;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(34, 197, 94, 0.4);
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.producto h3 {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/* ===============================
+   🔘 BOTONES
+================================ */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #22c55e;
+  color: #020617;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ===============================
+   🪟 MODAL
+================================ */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.modal.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  background: #020617;
+  padding: 25px;
+  border-radius: 18px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  animation: zoom .3s ease;
+}
+
+.modal-contenido img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.modal-contenido h2 {
+  margin: 10px 0;
+}
+
+.modal-contenido p {
+  margin: 8px 0;
+  color: #cbd5f5;
+}
+
+/* ===============================
+   ❌ CERRAR MODAL
+================================ */
+.cerrar {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ===============================
+   📱 BOTÓN WHATSAPP
+================================ */
+.btn-whatsapp {
+  display: block;
+  margin-top: 15px;
+  padding: 12px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: .3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* ===============================
+   🎬 ANIMACIONES
+================================ */
+@keyframes zoom {
+  from { transform: scale(0.7); }
+  to { transform: scale(1); }
+}
+
+/* ===============================
+   📱 RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  .productos {
+    padding: 20px;
+  }
+}
+
+.whatsapp-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-whatsapp.secundario {
+  background: #22c55e;
+  opacity: 0.9;
+}
+
+/* ===============================
+   🔥 BOTÓN DESCARGA PRO
+================================ */
+
+.btn-descargar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform .3s ease, box-shadow .3s ease;
+  box-shadow: 0 8px 20px rgba(34,197,94,.4);
+}
+
+/* Hover general */
+.btn-descargar:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(34,197,94,.6);
+}
+
+/* Icono animado */
+.btn-descargar .icon {
+  font-size: 18px;
+  animation: bounceDown 1.5s infinite;
+}
+
+/* Texto */
+.btn-descargar .text {
+  font-size: 14px;
+}
+
+/* Brillo al pasar el mouse */
+.btn-descargar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: rgba(255,255,255,.35);
+  transform: skewX(-20deg);
+}
+
+.btn-descargar:hover::before {
+  animation: shine .7s ease forwards;
+}
+
+/* ===============================
+   🎬 ANIMACIONES
+================================ */
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(4px); }
+}
+
+@keyframes shine {
+  from { left: -100%; }
+  to { left: 120%; }
+}
+
+
+/* ===============================
+   🟢 WHATSAPP FLOTANTE PRO
+================================ */
+
+.whatsapp-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 9999;
+}
+
+.whatsapp-float {
+  width: 65px;
+  height: 65px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-float img {
+  width: 36px;
+  height: 36px;
+  animation: bounce 1.5s infinite;
+}
+
+/* Menú desplegable */
+.whatsapp-menu {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  background: #020617;
+  border-radius: 12px;
+  padding: 10px;
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 190px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.5);
+}
+
+.whatsapp-menu a {
+  background: #25D366;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .3s;
+  text-align: center;
+}
+
+.whatsapp-menu a:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+.whatsapp-menu.activo {
+  display: flex;
+}
+
+/* ===============================
+   🎬 ANIMACIONES
+================================ */
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37,211,102,.7); }
+  70% { box-shadow: 0 0 0 20px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+@keyframes bounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+
+
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px;
+}
+
+.producto {
+  background: #1b2c8b;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform .3s, box-shadow .3s;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(34,197,94,.4);
+}
+
+.producto img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+}
+
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #22c55e;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+  margin-left: 10px;
+}
+
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #334155;
+  text-align: center;
+}
+
+/* MODAL */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+}
+
+.modal.activo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-contenido {
+  background: #020617;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  animation: zoom .3s ease;
+}
+
+.modal-contenido img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.modal-contenido h2 {
+  margin: 10px 0;
+}
+
+.modal-contenido p {
+  margin: 8px 0;
+  color: #cbd5f5;
+}
+
+.cerrar {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes zoom {
+  from { transform: scale(.7); }
+  to { transform: scale(1); }
+}
+
+/* BOTÓN WHATSAPP */
+.btn-whatsapp {
+  display: block;
+  margin-top: 15px;
+  padding: 12px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.btn-whatsapp:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* CONTENEDOR DE BOTONES */
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* BOTÓN DESCARGAR */
+.btn-descargar {
+  background: #38bdf8;
+  color: #020617;
+  font-weight: bold;
+}
+
+.btn-descargar:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+
+/* ===============================
+   📱 WHATSAPP FLOTANTE ANIMADO PRO
+================================ */
+.whatsapp-float {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  bottom: 25px;
+  right: 25px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+
+  animation: pulse 2s infinite;
+  box-shadow: 0 0 0 rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-float::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.6);
+  animation: wave 2s infinite;
+  z-index: -1;
+}
+
+.whatsapp-float img {
+  width: 36px;
+  height: 36px;
+  animation: bounce 1.5s infinite;
+}
+
+/* ===============================
+   🎬 ANIMACIONES
+================================ */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8);
+  }
+  70% {
+    box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+/* ===============================
+   🖱️ HOVER EFECTO
+================================ */
+.whatsapp-float:hover {
+  animation: none;
+  transform: scale(1.2) rotate(5deg);
+}
+
+.whatsapp-float:hover img {
+  animation: none;
+}
+
+
+
+
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+}
+
+
+
+
+
+.card img {
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+
+
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  color: white;
+}
+
+
+
+
+.card-title,
+.card-text {
+  color: white;
+}
+
+
+
+
+.btn {
+  border-radius: 30px;
+}
